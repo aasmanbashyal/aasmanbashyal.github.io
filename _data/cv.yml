@@ -2,96 +2,119 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Aasman Bashyal
+    - name: Address
+      value: Mid Baneshwor, 44600, Kathmandu, Bagmati, Nepal
 
-- title: Education
+- title: EDUCATION
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
+    - title: Bachelor of Engineering in Electronics and Communication
+      institution: Pulchowk Campus, IOE, T.U.
+      location: Kathmandu, Nepal
+      year: 2017 – 2022
+      description: 
+        - Computer Science Courseworks
+          - Computer Programming (C), Object Oriented Programming in C++, Discrete structure, Digital Logic, Computer Organization and Architecture, Computer Graphics, Embedded System, Computer Networks, Microprocessor, Project Mangement, Digital Signal Processing, Database Management Systems, Enterprise Computing
+        - Mathematics Courseworks
+          - Linear Algebra, Probability & Statistics, Calculus I, Calculus II, Numerical Methods
+- title: RESEARCH EXPERIENCE
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Engineer
+      institution: Angelswing Inc. 
+      location: Seoul, Korea
+      year: 2022 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Researched 3D indoor scene reconstruction using Neural Radiance Fields (NeRF), Gaussian Splatting, and Structure from Motion (SfM) techniques.
+        - Implemented a Modified architecture of the Segment Anything Model (50ms to 200ms latency) for masking large TIFF images, generating precise polygon masks, and improving the efficiency and accuracy of polygon drawing tools.
+        - Developed inspection system using You Only Look Once (YOLO) and detection 2, achieving 73% accuracy in on-site defect identification.
+        - Designed dashboard and data pipeline for CX and business teams, enhancing overall productivity.
+        - Created architecture for 3D terrain model editing MVP, optimizing performance to achieve 1-3 second response time.
+        - Developed the snapping feature for Computer-Aided Design (CAD) overlay, improving the precision of measurement tools.
+    - title: Research Engineer Intern
+      institution: Kathmandu Institute of Applied Sciences
+      location: Lalitpur, Nepal
+      year: 2021 – 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Designed portable solar-powered ESP32 weather station for real-time data collection.
+        - Integrated sensors for meteorological data, enhancing accuracy with Kalman filtering.
+        - Applied XGBoost and RandomForest models for weather forecasting.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Robotics Engineer
+      institution: Pulchowk Campus, IOE, T.U.
+      location: Lalitpur, Nepal
+      year: 2017 – 2021
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+        - Led 21-member embedded and robot navigation team for ABU Robocon 2020, Fiji, and worked as a student team member for ABU- Robocon 2019, Mongolia, and ABU- Robocon 2018, Vietnam.
+        - Developed semi-autonomous navigation system for a four-wheel omni-drive robot, overseeing the integration of LiDAR, encoders, and IMU sensors.
+        - Engineered custom boards including motor drivers, and STM32-based development boards. Created additional function-specific boards (e.g., Schmitt trigger, pneumatic control).
+- title: PROJECTS
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Automatic Modulation Classifier
+      year: 2021-2022
+      description:
+        - Explored deep-learning techniques, focusing on Convolutional Neural Networks (ConvNets) and Long Short-Term Memory (LSTM) models for signal modulation classification.
+        - Engineered a hybrid CNN-BiLSTM network with an attention mechanism, achieving an impressive 82% accuracy in classifying signals with SNR from -6 to 18.
+        - Experimented with Quantum Neural Networks (QNN) for BPSK and QPSK signal classification.
+    - title: Simultaneous Localization and Mapping
+      year: 2020
+      description:
+        - Created a ROS package for LIDAR-based SLAM, enabling mobile robots to map and locate themselves in unknown environments
+    - title: Rockabybaby
+      year: 2019
+      description:
+        - Led the development of a Smart Baby Cot with cry detection, wet bed sensing, and automatic rocking; won the SDG Health Category award at LOCUS 2020.
+        - Implemented a CNN model for baby cry pattern recognition using spectrograms.
+    - title: Baag Chal and Bouncy Ball
+      year: 2019-2018
+      description:
+        - Developed two games 'Baag Chal' in C++, demonstrating object-oriented programming skills, and 'Bouncy Ball' in C, showcasing proficiency in fundamental C programming.
+    - title: Visual Light Communication System
+      year: 2018
+      description:
+        - Engineered a Visual Light Communication (VLC) system for audio transmission, incorporating an audio-responsive LED transmitter circuit with amplifier.
+        - Designed a solar panel receiver with amplifier to extract audio from light signals for playback.
 
-- title: Honors and Awards
+- title: LEADERSHIP, TEACHING EXPERIENCE, AWARDS AND SCHOLARSHIP
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Guided the team for ABU Robocon 2022, focusing on innovative design and teamwork.
+    - year: 2021
       items:
-        - Max Planck Medal
+        - "IEEE Pulchowk Student Branch: As President (2021), led various technical and professional development initiatives, successfully launching 4 major technical workshops."
+        - "Mentored the team for ABU Robocon 2021, achieving second runner-up position."
+        - "Robotics Camp Instructor, Junior School GRS: Designed and led a robotics camp, introducing young students to robotics and STEM. Created engaging and interactive learning experiences."
+        - "Training: Participated in 'Mentor Training to Foster Logical and Creative Thinking Using ICT in Basic Education' by Masatoshi Suzuki, Japan. Represented IOE, enhancing skills in ICT integration in education."
+    - year: 2020
+      items:
+        - "IEEE Pulchowk Student Branch: As Membership Committee Chair (2020), spearheaded efforts that increased membership by 40%"
+        - "Tokyo Electron Award at ABU ROBOCON, Suva, Fiji"
+        - "Mentoring: Hardware Fellowship for junior students"
+        - "Winner: SDG Health Category, LOCUS 2020 for innovative project contribution"
+    - year: 2019
+      items:
+        - "ROHM Award at ABU ROBOCON, Ulaanbaatar, Mongolia"
+        - "Mentoring: Taught foundational hardware technology concepts with a focus on real-world applications. Involved in curriculum development and student assessment strategies."
+    - year: 2018
+      items:
+        - "Best Shuttlecock Award at ABU ROBOCON, Ninh-Binh, Vietnam"
+        - "Second Position: Inter-college Soldering Competition"
+    - year: "2016 - 2017"
+      items:
+        - "Mahatma Gandhi Scholarship:  Awarded by the Indian Embassy for academic excellence in high school."
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "Programming Languages: Python, C/C++, JavaScript, Matlab, SQL"
+    - "Machine Learning and Data Analysis: Proficient in Numpy, Scikit-learn, TensorFlow, Keras, PyTorch, Matplotlib, OpenCV, Pandas, SciPy"
+    - "Cloud and DevOps: Experienced with AWS (EC2, S3), Docker, GIT, Grafana, InfluxDB"
+    - "GIS and Mapping Tools: Skilled in QGIS, GDAL, GeoServer, OpenLayer, with practical project experience"
+    - "Database Technologies: PostgreSQL"
+    - "Embedded Systems and Simulation: Experienced with Embedded C, KiCad, Proteus, MATLAB, STM32CubeMX, Keil Microvision, Arduino, Raspberry Pi"
+    - "Scripting and Other Tools: Node-Red, Bash-script, LaTeX"
+    - "Additional Skills: Inkscape, Microsoft Office, Canva, MS Teams, Slack, Jira"
