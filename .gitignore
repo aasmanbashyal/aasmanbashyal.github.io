@@ -11,6 +11,4 @@ assets/libs/
 node_modules/
 vendor
 .idea
-sfm.md
 nerf.md
-gaussiansplatting.md
