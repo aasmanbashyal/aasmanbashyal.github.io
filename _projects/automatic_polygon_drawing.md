@@ -16,14 +16,14 @@ drawing tools.<br><br>
     <div class="col-xl mt-3 mt-md-0">
         <div class="embed-responsive embed-responsive-16by9">
 
-        {% include video.liquid path="https://www.youtube.com/embed/dCxMem8kfn8?list=PLHwc4DrOO_UtFg_zXiWGIJ8TxMXLMae0T" class="img-fluid rounded z-depth-1" autoplay=true %}
+        {% include video.liquid path="https://www.youtube.com/embed/dCxMem8kfn8" class="img-fluid rounded z-depth-1" autoplay=true %}
     </div>
     </div>
 
     <div class="col-xl mt-3 mt-md-0">
         <div class="embed-responsive embed-responsive-16by9">
 
-        {% include video.liquid path="https://www.youtube.com/embed/CfU6KY6Fgc4?list=PLHwc4DrOO_UtFg_zXiWGIJ8TxMXLMae0T" class="img-fluid rounded z-depth-1" autoplay=true %}
+        {% include video.liquid path="https://www.youtube.com/embed/CfU6KY6Fgc4" class="img-fluid rounded z-depth-1" autoplay=true %}
     </div>
     </div>
 

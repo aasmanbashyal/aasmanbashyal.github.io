@@ -3,7 +3,7 @@ layout: page
 title: 3D Terrain Editing 
 description: Flattening 3D surface
 img: assets/img/terrain.gif
-importance: 4
+importance: 3
 category: Other Projects
 ---
 
