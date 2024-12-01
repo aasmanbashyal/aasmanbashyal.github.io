@@ -8,6 +8,14 @@ category: Other Projects
 ---
 Structure from Motion (SfM) is a computer vision technique for reconstructing 3D structures from 2D image (sequencial and non-sequencial) . This project demonstrates the end-to-end pipeline for SfM, including feature detection, camera pose estimation, triangulation, and 3D point cloud generation with code, mathematical representation and open source alternatives.
 
+<div class="row">
+    <div class="col-xl mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9">
+            {% include video.liquid path="https://www.youtube.com/embed/x0KW0VWS5S4" class="img-fluid rounded z-depth-1" controls=true %}
+        </div>
+    </div>
+</div>
+
 ## Steps
 The following steps are typically used in standard structure from motion.
 
