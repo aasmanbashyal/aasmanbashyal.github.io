@@ -22,12 +22,7 @@ category: College Projects
 ---
 
 <div style="text-align: justify;">
-    Simultaneous Location and Mapping (SLAM) is a method used to numerically solve the problem of extracting map and location in an unknown environment for Mobile robot navigation. It has been widely popular due to its wide range of applications in any sort of robot.
-</div>
-
-<div style="text-align: justify;">
-motion in an unexplored environment. Various approaches have been developed for tackling this problem like probabilistic approach, feature based, graph based and so on. We are using grid-map based approach derived from Tiny Slam that is enhanced with a layer of particle filter over it. The approach resulted in a improved map with less orientation errors and can encompass even greater robot motion speed. The robot motion however doesn’t encompass
-any control measures resulting in errors in map updates due to inertial jerk.
+    Simultaneous Location and Mapping (SLAM) is a method used to numerically solve the problem of extracting map and location in an unknown environment for Mobile robot navigation. It has been widely popular due to its wide range of applications in any sort of robot motion in an unexplored environment. Various approaches have been developed for tackling this problem like probabilistic approach, feature based, graph based and so on. We are using grid-map based approach derived from Tiny Slam that is enhanced with a layer of particle filter over it. The approach resulted in a improved map with less orientation errors and can encompass even greater robot motion speed. The robot motion however doesn’t encompass any control measures resulting in errors in map updates due to inertial jerk.
 </div>
 <div style="border: 10px solid transparent;"></div>
 

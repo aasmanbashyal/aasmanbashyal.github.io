@@ -20,10 +20,8 @@ category: College Projects
 ## Abstract
 ***
 <div style="text-align: justify;">
-Automatic Modulation Classification (AMC) is the classification of signals automati-
-cally based on the type of modulation used to generate that signal. Many different approaches
-for AMC have been proposed which are categorized as ‘Decision Theoretic Approach’, ‘Fea-
-ture Based Approach’ and ‘Deep Learning Based Approach’. Here, we have implemented
+Automatic Modulation Classification (AMC) is the classification of signals automatically based on the type of modulation used to generate that signal. Many different approaches
+for AMC have been proposed which are categorized as ‘Decision Theoretic Approach’, ‘Feature Based Approach’ and ‘Deep Learning Based Approach’. Here, we have implemented
 various types of classifiers for AMC which include likelihood based approach, deep learning
 based approaches (LSTM and BiLSTM networks), CNN-LSTM model and also using a Quantum Neural Network
 (QNN). The likelihood based classifier and the QNN are restricted to classify only two types
