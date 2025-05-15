@@ -213,3 +213,60 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/* CV */
+.cv {
+  margin-bottom: 40px;
+
+  .card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+    
+    &:hover {
+      box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    }
+
+    .card-title {
+      color: var(--global-theme-color);
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-weight: 600;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: var(--global-theme-color);
+      }
+    }
+
+    .list-group-item {
+      background-color: inherit;
+      border-color: var(--global-divider-color);
+
+      .badge {
+        color: var(--global-card-bg-color) !important;
+        background-color: var(--global-theme-color) !important;
+      }
+    }
+  }
+}
+
+.table-cv-map {
+  background-color: transparent;
+  border: none;
+  color: var(--global-text-color);
+}
+
+.date-column {
+  width: 75px;
+  transform: translateX(-15px) translateY(-5px);
+  color: var(--global-theme-color);
+  font-weight: 500;
+}
