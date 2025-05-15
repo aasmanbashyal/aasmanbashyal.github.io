@@ -15,33 +15,33 @@
   --popover: 0 0% 100%; /* White popover */
   --popover-foreground: 240 10% 3.9%; /* Dark text for popover content */
   
-  /* Primary color - Dark Blue for main actions/buttons */
-  --primary: 233 64% 30%; /* #1A237E Dark Blue */
-  --primary-foreground: 0 0% 98%; /* Light text on dark blue */
+  /* Primary color - Cobalt Blue for main actions/buttons */
+  --primary: 215 85% 35%; /* #0A58CA Cobalt Blue */
+  --primary-foreground: 0 0% 98%; /* Light text on cobalt blue */
   
   /* Secondary color - Light Cool Gray */
-  --secondary: 233 60% 96%; /* Very light blue-tinted background */  
-  --secondary-foreground: 233 64% 30%; /* Using primary color for text */
+  --secondary: 215 60% 96%; /* Very light blue-tinted background */  
+  --secondary-foreground: 215 85% 35%; /* Using primary color for text */
   
   /* Muted color with blue tint for better harmony */
-  --muted: 233 30% 92%;
-  --muted-foreground: 233 30% 35%;
+  --muted: 215 30% 92%;
+  --muted-foreground: 215 30% 35%;
   
   /* Accent color - slightly different from primary for distinction */
-  --accent: 220 70% 45%;
+  --accent: 215 85% 50%;
   --accent-foreground: 0 0% 98%;
   
   --destructive: 0 84.2% 60.2%; /* Default Red */
   --destructive-foreground: 0 0% 98%; /* Light text on red */
   
-  --border: 233 30% 80%; /* Subtle blue-tinted border */
+  --border: 215 30% 80%; /* Subtle blue-tinted border */
   --input: 0 0% 100%; /* White input background */
-  --ring: 233 64% 40%; /* Focus ring color */
+  --ring: 215 85% 40%; /* Focus ring color */
   
   --radius: 0.5rem;
   
   /* Chart colors with improved contrast and harmony */
-  --chart-1: 233 64% 45%; /* Primary blue */
+  --chart-1: 215 85% 45%; /* Primary cobalt blue */
   --chart-2: 173 58% 45%; /* Teal */
   --chart-3: 197 60% 40%; /* Blue-green */
   --chart-4: 280 60% 55%; /* Purple */
@@ -125,9 +125,9 @@ html[data-theme="dark"] {
   --popover: 240 6% 13%; /* Popovers slightly lighter than cards */
   --popover-foreground: 0 0% 98%; /* ~White text for popover content */
   
-  /* Primary - vibrant accessible blue for dark mode */
-  --primary: 220 70% 60%;
-  --primary-foreground: 220 10% 15%; /* Dark text on primary */
+  /* Primary - vibrant accessible cobalt blue for dark mode */
+  --primary: 215 80% 65%;
+  --primary-foreground: 215 10% 15%; /* Dark text on primary */
   
   /* Secondary - Medium-Dark Gray for secondary elements */
   --secondary: 240 5% 18%;
@@ -137,8 +137,8 @@ html[data-theme="dark"] {
   --muted: 240 5% 22%;
   --muted-foreground: 0 0% 70%; /* Brighter text for better readability */
   
-  /* Accent - bright blue for accents */
-  --accent: 210 80% 65%;
+  /* Accent - bright cobalt blue for accents */
+  --accent: 215 85% 65%;
   --accent-foreground: 0 0% 10%; /* Very dark text on accent */
   
   --destructive: 0 70% 55%; /* Vibrant red for destructive actions */
@@ -146,10 +146,10 @@ html[data-theme="dark"] {
   
   --border: 240 5% 25%; /* Border color visible against dark */
   --input: 240 5% 16%; /* Input background distinct from main bg */
-  --ring: 220 70% 70%; /* Ring color related to primary */
+  --ring: 215 80% 70%; /* Ring color related to primary */
   
   /* Chart colors for dark mode with better contrast */
-  --chart-1: 220 70% 60%; /* Primary blue */
+  --chart-1: 215 80% 65%; /* Primary cobalt blue */
   --chart-2: 160 60% 50%; /* Teal */
   --chart-3: 30 80% 60%; /* Orange */
   --chart-4: 280 65% 65%; /* Purple */
