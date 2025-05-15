@@ -1595,3 +1595,27 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 }
+
+.pdf-icon {
+  color: var(--global-theme-color);
+  opacity: 0.95;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    color: var(--global-hover-color);
+  }
+}
+
+.pdf-container {
+  margin: 2rem 0;
+  border: 1px solid var(--global-divider-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
+  object {
+    display: block;
+  }
+}

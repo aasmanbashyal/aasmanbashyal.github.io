@@ -119,7 +119,7 @@
   contents:
     - "Programming Languages: Python, C/C++, JavaScript, Matlab, SQL"
     - "Machine Learning and Data Analysis: Proficient in Numpy, Scikit-learn, TensorFlow, Keras, PyTorch, Matplotlib, OpenCV, Pandas, SciPy"
-    - "Cloud and DevOps: Experienced with AWS (EC2, S3), Docker, GIT, Grafana, InfluxDB"
+    - "Cloud and DevOps: Experienced with AWS (EC2, S3), Docker, GIT, Grafana, InfluxDB, MLflow, Kubeflow"
     - "GIS and Mapping Tools: Skilled in QGIS, GDAL, GeoServer, OpenLayer, with practical project experience"
     - "Database Technologies: PostgreSQL"
     - "Embedded Systems and Simulation: Experienced with Embedded C, KiCad, Proteus, MATLAB, STM32CubeMX, Keil Microvision, Arduino, Raspberry Pi"
