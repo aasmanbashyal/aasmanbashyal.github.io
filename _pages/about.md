@@ -9,7 +9,7 @@ profile:
   image: profile_picture.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Kathmandu, Bagmati, Nepal</p>
+    <p><i class="fa-solid fa-location-dot"></i> Kathmandu, Bagmati, Nepal</p>
 
 
 news: false # includes a list of news items

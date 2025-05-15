@@ -398,11 +398,22 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Pretendard", monospace;
 
     p {
       display: inline-block;
       margin: 0;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      background-color: var(--global-card-bg-color);
+      border-left: 3px solid var(--global-theme-color);
+      font-size: 0.85rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      
+      i {
+        color: var(--global-theme-color);
+        margin-right: 6px;
+      }
     }
   }
 }
@@ -448,6 +459,21 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 2px solid rgba(var(--primary), 0.15);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, 
+      var(--global-theme-color) 0%, 
+      rgba(var(--primary), 0.2) 50%, 
+      transparent 100%);
+    border-bottom-left-radius: var(--radius);
+  }
 }
 
 .navbar .dropdown-menu {
@@ -1658,7 +1684,7 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // Check if file exists and read it, then add the body font styles
 body {
-  font-family: var(--font-geist-sans, "Helvetica Neue", Helvetica, sans-serif);
+  font-family: "Pretendard", var(--font-geist-sans, "Helvetica Neue"), Helvetica, sans-serif;
   background-color: var(--global-bg-color);
   color: var(--global-text-color);
 }

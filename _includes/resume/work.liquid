@@ -22,8 +22,8 @@
               {% if content.location %}
                 <tr>
                   <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
+                    <p class="location location-badge">
+                      <i class="fa-solid fa-location-dot"></i>
                       {{ content.location }}
                     </p>
                   </td>
@@ -34,17 +34,22 @@
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.position }}</a>
+            {{ content.position }}
+            {% if content.name %}
+              <br>
+              <span class="institution">
+                <i class="fa-solid fa-building"></i> {{ content.name }}
+              </span>
+            {% endif %}
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
-          <ul class="items">
-            {% for item in content.highlights %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
+          <div class="ml-1 ml-md-4">
+            {{ content.summary }}
+            <ul>
+              {% for highlight in content.highlights %}
+                <li>{{ highlight }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </li>
