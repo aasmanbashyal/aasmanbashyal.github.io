@@ -4,6 +4,8 @@
 
 body {
   padding-bottom: 70px;
+  margin-top: 0;
+  padding-top: 0;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
@@ -13,13 +15,14 @@ body {
   h4,
   h5,
   h6 {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 56px;
   }
 }
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
   padding-top: 56px;
+  margin-top: 0;
 }
 
 body.sticky-bottom-footer {
@@ -29,6 +32,11 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: $max-content-width;
+}
+
+// Compact the space between navbar and content
+.container.mt-5 {
+  margin-top: 1rem !important;
 }
 
 // Profile
