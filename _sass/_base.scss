@@ -463,26 +463,16 @@ ul.task-list input[type="checkbox"] {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 2px solid rgba(var(--primary), 0.15);
+  border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 1;
   position: relative;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   margin-top: 0;
   
   &::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, 
-      var(--global-theme-color) 0%, 
-      rgba(var(--primary), 0.2) 50%, 
-      transparent 100%);
-    border-bottom-left-radius: var(--radius);
+    display: none; /* Remove the blue gradient line */
   }
 }
 
@@ -1912,4 +1902,10 @@ body {
 .fixed-top {
   top: 0;
   position: fixed;
+  z-index: 1030;
+}
+
+body.fixed-top-nav {
+  padding-top: 56px !important;
+  margin-top: 0 !important;
 }

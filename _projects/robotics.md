@@ -9,7 +9,7 @@ category: College Projects
 <div style="text-align: justify;">
 
 The ABU Asia-Pacific Robot Contest <a href="https://en.wikipedia.org/wiki/ABU_Robocon" target="_blank">(ABU Robocon)</a>
- is a college-level robot competition for students across the Asia-Oceania region. Founded in 2002 by the Asia-Pacific Broadcasting Union, the contest challenges robots to complete specific tasks within a designated time limit.
+ is a college level robot competition for students across the Asia Pacific region. Founded in 2002 by the Asia-Pacific Broadcasting Union, the contest challenges robots to complete specific tasks within a designated time limit.
 
 <br><br>
 </div>
