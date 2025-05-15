@@ -25,15 +25,16 @@ layout: default
     <!-- Embedded PDF viewer -->
     {% if page.cv_pdf %}
       <div class="pdf-container">
-        <object 
-          data="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}" 
-          type="application/pdf" 
+        <iframe 
+          src="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0&view=FitH" 
           width="100%" 
-          height="800px">
+          height="800px"
+          frameborder="0"
+          seamless>
           <p>It appears your browser doesn't support embedded PDFs. 
             <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}">Click here to download the PDF</a> instead.
           </p>
-        </object>
+        </iframe>
       </div>
     {% else %}
       <!-- Fallback to the original CV content if no PDF is specified -->

@@ -265,8 +265,51 @@ ul.task-list input[type="checkbox"] {
 // Project-specific card styling
 .projects {
   .card {
+    background-color: var(--global-card-bg-color);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    transition: all 0.25s ease;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
+    
+    .card-link {
+      color: inherit;
+      text-decoration: none;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    
+    .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+    }
+    
+    .card-body {
+      flex: 1;
+      padding: 1.25rem;
+    }
+    
     .card-title {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--global-text-color);
+      transition: color 0.2s ease;
       position: relative;
       padding-bottom: 0.5rem;
       
@@ -279,6 +322,54 @@ ul.task-list input[type="checkbox"] {
         height: 2px;
         background-color: var(--global-theme-color);
       }
+    }
+    
+    .card-text {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0;
+    }
+    
+    .card-footer {
+      padding: 0.75rem 1.25rem;
+      background-color: transparent;
+      border-top: none;
+    }
+    
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--global-theme-color);
+      opacity: 0.9;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      font-size: 0.9rem;
+      
+      .link-text {
+        margin-left: 0.25rem;
+        font-weight: 500;
+      }
+      
+      &:hover {
+        opacity: 1;
+        transform: translateY(-1px);
+        color: var(--global-hover-color);
+      }
+    }
+    
+    .stars {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 0.5rem;
+      color: #f1c40f;
+      font-size: 0.8rem;
     }
   }
 }
@@ -1614,8 +1705,21 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+  height: 80vh; /* Use viewport height for better responsiveness */
+  min-height: 600px;
   
-  object {
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: block;
+  }
+  
+  @media (max-width: 768px) {
+    height: 70vh; /* Smaller height on mobile */
+    min-height: 400px;
   }
 }

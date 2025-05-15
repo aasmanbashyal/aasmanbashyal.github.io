@@ -1,6 +1,6 @@
 <div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
+  <div class="card h-100 hoverable">
+    <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="card-link">
       {% if project.img %}
         {%
           include figure.liquid
@@ -14,32 +14,37 @@
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
+      </div>
+    </a>
+    <div class="card-footer bg-transparent border-0 p-3 pt-0">
+      <div class="project-links">
+        {% if project.github %}
+          <a href="{{ project.github }}" class="project-link" title="View Code Repository" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github gh-icon"></i>
+            <span class="link-text">Code</span>
+          </a>
+          {% if project.github_stars %}
+            <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+              <i class="fa-solid fa-star"></i>
+              <span id="{{ project.github_stars }}-stars"></span>
+            </span>
           {% endif %}
-          
-          {% if project.pdf %}
-            <div class="download-icon ml-2">
-              <div class="icon" data-toggle="tooltip" title="Download PDF">
-                <a href="{{ project.pdf | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer">
-                  <i class="fa-solid fa-file-pdf pdf-icon"></i>
-                </a>
-              </div>
-            </div>
-          {% endif %}
-        </div>
+        {% endif %}
+        
+        {% if project.pdf %}
+          <a href="{{ project.pdf | prepend: 'assets/pdf/' | relative_url }}" class="project-link" title="View PDF Document" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <span class="link-text">PDF</span>
+          </a>
+        {% endif %}
+        
+        {% if project.website %}
+          <a href="{{ project.website }}" class="project-link" title="Visit Website" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-globe website-icon"></i>
+            <span class="link-text">Website</span>
+          </a>
+        {% endif %}
       </div>
     </div>
-  </a>
+  </div>
 </div>
