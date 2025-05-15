@@ -18,7 +18,7 @@
           - Computer Programming (C), Object Oriented Programming in C++, Discrete structure, Digital Logic, Computer Organization and Architecture, Computer Graphics, Embedded System, Computer Networks, Microprocessor, Project Mangement, Digital Signal Processing, Database Management Systems, Enterprise Computing
         - Mathematics Courseworks
           - Linear Algebra, Probability & Statistics, Calculus I, Calculus II, Numerical Methods
-- title: RESEARCH EXPERIENCE
+- title: WORK AND RESEARCH EXPERIENCE
   type: time_table
   contents:
     - title: Research Engineer
@@ -26,12 +26,19 @@
       location: Seoul, Korea
       year: 2022 – Present
       description:
-        - Researched 3D indoor scene reconstruction using Neural Radiance Fields (NeRF), Gaussian Splatting, and Structure from Motion (SfM) techniques.
-        - Implemented a Modified architecture of the Segment Anything Model (50ms to 200ms latency) for masking large TIFF images, generating precise polygon masks, and improving the efficiency and accuracy of polygon drawing tools.
-        - Developed inspection system using You Only Look Once (YOLO) and detection 2, achieving 73% accuracy in on-site defect identification.
-        - Designed dashboard and data pipeline for CX and business teams, enhancing overall productivity.
+        - Researched 3D indoor scene reconstruction using Neural Radiance Fields (NeRF), Gaussian Splatting, and Structure
+          from Motion (SfM) techniques.
+        - Implemented a Modified architecture of the Segment Anything Model (50ms to 200ms latency) for segmenting large
+          TIFF images, generating precise polygon masks, and improving the efficiency and accuracy of polygon drawing tools.
+        - Lead the development of 360° indoor navigation using Visual SLAM to generate Keyframes and trajectories from 360°
+          videos.
+        - Developed an on-site inspection system employing You Only Look Once (YOLO) and Detectron2 models. The
+          development process involved data preparation and data labeling, resulting in a system achieving 73% accuracy for defect
+          identification.
+        - Designed a Power-BI based dashboard and data pipeline for CX and business teams, enhancing overall productivity.
         - Created architecture for 3D terrain model editing MVP, optimizing performance to achieve 1-3 second response time.
-        - Developed the snapping feature for Computer-Aided Design (CAD) overlay, improving the precision of measurement tools.
+        - Developed the snapping feature for Computer-Aided Design (CAD) overlay, improving the precision of measurement
+          tools.
     - title: Research Engineer Intern
       institution: Kathmandu Institute of Applied Sciences
       location: Lalitpur, Nepal

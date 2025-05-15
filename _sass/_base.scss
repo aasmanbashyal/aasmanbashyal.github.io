@@ -19,8 +19,28 @@ strong {
   color: var(--global-text-color);
 }
 
+// Make headings and first words in headings use the accent color
+h1, h2, h3 {
+  span.first-word, span.first-name {
+    color: var(--global-theme-color);
+    font-weight: bold;
+  }
+}
+
+// Make project titles stand out with accent color
+.projects .card .card-title {
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+// Make icons more vibrant with the accent color
+.social .contact-icons a i::before {
+  color: var(--global-theme-color) !important;
+}
+
 hr {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 1px solid var(--global-theme-color);
+  opacity: 0.3;
 }
 
 table {
@@ -38,14 +58,44 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--global-theme-color);
+    opacity: 0.3;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+  }
 
   &:hover {
     color: var(--global-theme-color);
-    text-decoration: underline;
+    text-decoration: none;
+    
+    &::after {
+      transform: scaleX(1);
+    }
   }
+}
 
-  &:hover:after :not(.nav-item.dropdown) {
-    width: 100%;
+// Exception for certain links where we don't want the underline effect
+.navbar a, 
+.social a, 
+.projects a,
+.pagination a,
+a.dropdown-item,
+footer a,
+.card a,
+.post-tag a {
+  &::after {
+    display: none;
   }
 }
 
@@ -168,18 +218,66 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+  }
 
   .card-img {
     width: 100%;
-    padding-top: 1.25rem;
+    padding-top: 0;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
   }
 
   .card-title {
     color: var(--global-text-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    transition: color 0.25s ease;
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.5rem;
+  }
+  
+  .github-icon {
+    i {
+      color: var(--global-theme-color);
+      transition: all 0.2s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+        color: var(--global-hover-color);
+      }
+    }
+  }
+}
+
+// Project-specific card styling
+.projects {
+  .card {
+    .card-title {
+      font-size: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: var(--global-theme-color);
+      }
+    }
   }
 }
 
@@ -245,7 +343,7 @@ ul.task-list input[type="checkbox"] {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid rgba(var(--primary), 0.2);
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
@@ -253,26 +351,43 @@ ul.task-list input[type="checkbox"] {
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 0.5rem 0;
 
   a:not(.active) {
     color: var(--global-text-color);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease;
   }
 
   a:hover {
-    color: var(--global-hover-color);
+    color: var(--global-theme-color);
+    background-color: rgba(var(--primary), 0.05);
   }
 
   .dropdown-divider {
     border-top: 1px solid var(--global-divider-color) !important;
+    margin: 0.3rem 0;
   }
 }
 
 .dropdown-item {
   color: var(--global-text-color);
+  transition: all 0.2s ease;
 
   &:hover {
-    color: var(--global-hover-color);
-    background-color: var(--global-bg-color);
+    color: var(--global-theme-color);
+    background-color: transparent;
+    padding-left: 1.8rem;
+  }
+  
+  &.active {
+    color: var(--global-theme-color);
+    background-color: transparent;
+    font-weight: 500;
+    border-left: 3px solid var(--global-theme-color);
   }
 }
 
@@ -285,23 +400,72 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-weight: 500;
+    
+    .first-name {
+      color: var(--global-theme-color);
+      position: relative;
+      padding-bottom: 2px;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--global-theme-color);
+      }
+    }
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--global-theme-color);
+      transition: width 0.25s ease;
+    }
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-theme-color);
+      
+      &::after {
+        width: 100%;
+      }
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
-    font-weight: bolder;
+    font-weight: 600;
     color: var(--global-theme-color);
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--global-theme-color);
+    }
 
     &:hover {
       color: var(--global-hover-color);
+      
+      &::after {
+        background-color: var(--global-hover-color);
+      }
     }
   }
 
@@ -312,13 +476,14 @@ ul.task-list input[type="checkbox"] {
 
     a {
       i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        color: var(--global-theme-color);
+        transition: all 0.2s ease-in-out;
       }
 
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
+          transform: scale(1.1);
         }
       }
     }
@@ -384,16 +549,24 @@ ul.task-list input[type="checkbox"] {
 
   .contact-icons {
     font-size: 2rem;
-
+    
     a {
+      margin: 0 5px;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        transform: translateY(-3px);
+      }
+      
       i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        color: var(--global-theme-color);
+        transition: all 0.2s ease-in-out;
       }
 
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
+          transform: scale(1.1);
         }
       }
     }
@@ -401,6 +574,8 @@ ul.task-list input[type="checkbox"] {
 
   .contact-note {
     font-size: 0.8rem;
+    color: var(--global-theme-color);
+    font-weight: 500;
   }
 }
 
@@ -510,19 +685,39 @@ footer.sticky-bottom {
 // Blog
 
 .header-bar {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-theme-color);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
 
   h1 {
+    position: relative;
+    display: inline-block;
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, hsl(var(--primary)), transparent);
+    }
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: var(--global-text-color-light);
+    font-weight: 400;
   }
 }
 
 .tag-category-list {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-theme-color);
   text-align: center;
   padding-top: 1rem;
 
@@ -626,12 +821,33 @@ footer.sticky-bottom {
       .card-title {
         color: var(--global-theme-color);
       }
+      
+      .card {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+        transform: translateY(-1px);
+        border-color: var(--global-divider-color);
+      }
     }
   }
 
   .card {
-    img {
-      width: 100%;
+    transition: all 0.25s ease;
+    
+    .card-title {
+      font-size: 1rem;
+      transition: color 0.25s ease;
+      position: relative;
+      padding-bottom: 0.5rem;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: var(--global-theme-color);
+      }
     }
   }
 
@@ -646,12 +862,14 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-theme-color);
+    border-bottom: 2px solid var(--global-theme-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+    font-weight: bold;
+    font-size: 1.3rem;
   }
 }
 
@@ -677,11 +895,12 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
+    color: var(--global-theme-color);
+    border-top: 1px solid var(--global-theme-color);
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
+    font-weight: bold;
   }
 
   ol.bibliography {
@@ -1304,4 +1523,31 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+// Check if file exists and read it, then add the body font styles
+body {
+  font-family: var(--font-geist-sans, "Helvetica Neue", Helvetica, sans-serif);
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+}
+
+// Custom scrollbar styling
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
 }

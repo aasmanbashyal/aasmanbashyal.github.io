@@ -5,43 +5,83 @@
 @use "sass:color";
 
 :root {
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$red-color};
-  --global-hover-color: #{$pink-color-light};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: #81807d;
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$grey-color};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  /* Tailwind colors - light mode */
+  --background: 0 0% 100%; /* Pure white for better contrast with elements */
+  --foreground: 240 10% 3.9%; /* Dark text for readability */
+  
+  --card: 0 0% 100%; /* Pure white for cards */
+  --card-foreground: 240 10% 3.9%; /* Dark text for card content */
+  
+  --popover: 0 0% 100%; /* White popover */
+  --popover-foreground: 240 10% 3.9%; /* Dark text for popover content */
+  
+  /* Primary color - Dark Blue for main actions/buttons */
+  --primary: 233 64% 30%; /* #1A237E Dark Blue */
+  --primary-foreground: 0 0% 98%; /* Light text on dark blue */
+  
+  /* Secondary color - Light Cool Gray */
+  --secondary: 233 60% 96%; /* Very light blue-tinted background */  
+  --secondary-foreground: 233 64% 30%; /* Using primary color for text */
+  
+  /* Muted color with blue tint for better harmony */
+  --muted: 233 30% 92%;
+  --muted-foreground: 233 30% 35%;
+  
+  /* Accent color - slightly different from primary for distinction */
+  --accent: 220 70% 45%;
+  --accent-foreground: 0 0% 98%;
+  
+  --destructive: 0 84.2% 60.2%; /* Default Red */
+  --destructive-foreground: 0 0% 98%; /* Light text on red */
+  
+  --border: 233 30% 80%; /* Subtle blue-tinted border */
+  --input: 0 0% 100%; /* White input background */
+  --ring: 233 64% 40%; /* Focus ring color */
+  
+  --radius: 0.5rem;
+  
+  /* Chart colors with improved contrast and harmony */
+  --chart-1: 233 64% 45%; /* Primary blue */
+  --chart-2: 173 58% 45%; /* Teal */
+  --chart-3: 197 60% 40%; /* Blue-green */
+  --chart-4: 280 60% 55%; /* Purple */
+  --chart-5: 330 70% 50%; /* Magenta */
+  
+  /* Original theme variables mapped to Tailwind colors */
+  --global-bg-color: hsl(var(--background));
+  --global-code-bg-color: hsl(var(--card));
+  --global-text-color: hsl(var(--foreground));
+  --global-text-color-light: hsl(var(--muted-foreground));
+  --global-theme-color: hsl(var(--primary));
+  --global-hover-color: hsl(var(--accent));
+  --global-hover-text-color: hsl(var(--accent-foreground));
+  --global-footer-bg-color: hsl(var(--secondary));
+  --global-footer-text-color: hsl(var(--secondary-foreground));
+  --global-footer-link-color: hsl(var(--primary));
+  --global-distill-app-color: hsl(var(--muted));
+  --global-divider-color: hsl(var(--border));
+  --global-card-bg-color: hsl(var(--card));
+  --global-highlight-color: hsl(var(--muted));
+  --global-back-to-top-bg-color: hsla(var(--primary), 0.9);
+  --global-back-to-top-text-color: hsl(var(--primary-foreground));
+  --global-newsletter-bg-color: hsl(var(--card));
+  --global-newsletter-text-color: hsl(var(--card-foreground));
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  /* Block elements with improved contrast */
+  --global-tip-block: hsl(160 64% 40%);
+  --global-tip-block-bg: hsl(160 64% 95%);
+  --global-tip-block-text: hsl(160 64% 30%);
+  --global-tip-block-title: hsl(160 64% 40%);
+  --global-warning-block: hsl(45 100% 50%);
+  --global-warning-block-bg: hsl(45 100% 95%);
+  --global-warning-block-text: hsl(45 100% 30%);
+  --global-warning-block-title: hsl(45 100% 40%);
+  --global-danger-block: hsl(0 84.2% 60.2%);
+  --global-danger-block-bg: hsl(0 84.2% 95%);
+  --global-danger-block-text: hsl(0 84.2% 30%);
+  --global-danger-block-title: hsl(0 84.2% 60.2%);
 
+  /* Toggles */
   #light-toggle-system {
     padding-left: 10px;
     padding-top: 12px;
@@ -75,41 +115,65 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$red-color};
-  --global-hover-color: #{$red-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
-
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  /* Tailwind colors - dark mode */
+  --background: 240 6% 10%; /* Dark Cool Gray */
+  --foreground: 0 0% 98%; /* ~White for high contrast */
+  
+  --card: 240 6% 12%; /* Slightly Lighter Dark Cool Gray for cards */
+  --card-foreground: 0 0% 98%; /* ~White text for card content */
+  
+  --popover: 240 6% 13%; /* Popovers slightly lighter than cards */
+  --popover-foreground: 0 0% 98%; /* ~White text for popover content */
+  
+  /* Primary - vibrant accessible blue for dark mode */
+  --primary: 220 70% 60%;
+  --primary-foreground: 220 10% 15%; /* Dark text on primary */
+  
+  /* Secondary - Medium-Dark Gray for secondary elements */
+  --secondary: 240 5% 18%;
+  --secondary-foreground: 0 0% 90%; /* Lighter text for better contrast */
+  
+  /* Muted - Lighter Dark Gray for muted elements */
+  --muted: 240 5% 22%;
+  --muted-foreground: 0 0% 70%; /* Brighter text for better readability */
+  
+  /* Accent - bright blue for accents */
+  --accent: 210 80% 65%;
+  --accent-foreground: 0 0% 10%; /* Very dark text on accent */
+  
+  --destructive: 0 70% 55%; /* Vibrant red for destructive actions */
+  --destructive-foreground: 0 0% 98%; /* White text on destructive */
+  
+  --border: 240 5% 25%; /* Border color visible against dark */
+  --input: 240 5% 16%; /* Input background distinct from main bg */
+  --ring: 220 70% 70%; /* Ring color related to primary */
+  
+  /* Chart colors for dark mode with better contrast */
+  --chart-1: 220 70% 60%; /* Primary blue */
+  --chart-2: 160 60% 50%; /* Teal */
+  --chart-3: 30 80% 60%; /* Orange */
+  --chart-4: 280 65% 65%; /* Purple */
+  --chart-5: 340 75% 60%; /* Pink */
+  
+  /* Original theme variables mapped to Tailwind colors */
+  --global-bg-color: hsl(var(--background));
+  --global-code-bg-color: hsl(var(--card));
+  --global-text-color: hsl(var(--foreground));
+  --global-text-color-light: hsl(var(--muted-foreground));
+  --global-theme-color: hsl(var(--primary));
+  --global-hover-color: hsl(var(--accent));
+  --global-hover-text-color: hsl(var(--accent-foreground));
+  --global-footer-bg-color: hsl(var(--secondary));
+  --global-footer-text-color: hsl(var(--secondary-foreground));
+  --global-footer-link-color: hsl(var(--primary-foreground));
+  --global-distill-app-color: hsl(var(--muted));
+  --global-divider-color: hsl(var(--border));
+  --global-card-bg-color: hsl(var(--card));
+  --global-highlight-color: hsl(var(--muted));
+  --global-back-to-top-bg-color: hsla(var(--primary), 0.8);
+  --global-back-to-top-text-color: hsl(var(--primary-foreground));
+  --global-newsletter-bg-color: hsl(var(--card));
+  --global-newsletter-text-color: hsl(var(--card-foreground));
 
   .repo-img-light {
     display: none;
