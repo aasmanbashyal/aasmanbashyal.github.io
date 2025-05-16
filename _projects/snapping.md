@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CAD snapping
-description: Enabling Snapping 
+description: Enabling Snapping
 img: assets/img/snapping.gif
 importance: 3
 category: Other Projects
@@ -10,6 +10,7 @@ category: Other Projects
 <div style="text-align: justify;">
 
 Developed a snapping feature for a Computer-Aided Design (CAD) overlay, improving the precision and efficiency of the product's measurement tools.<br><br>
+
 </div>
 
 <div class="row">
@@ -19,4 +20,3 @@ Developed a snapping feature for a Computer-Aided Design (CAD) overlay, improvin
         </div>
     </div>
 </div>
-

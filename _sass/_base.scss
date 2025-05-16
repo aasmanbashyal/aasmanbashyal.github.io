@@ -20,8 +20,11 @@ strong {
 }
 
 // Make headings and first words in headings use the accent color
-h1, h2, h3 {
-  span.first-word, span.first-name {
+h1,
+h2,
+h3 {
+  span.first-word,
+  span.first-name {
     color: var(--global-theme-color);
     font-weight: bold;
   }
@@ -60,9 +63,9 @@ table.table a {
   color: var(--global-theme-color);
   text-decoration: none;
   position: relative;
-  
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 1px;
@@ -78,7 +81,7 @@ table.table a {
   &:hover {
     color: var(--global-theme-color);
     text-decoration: none;
-    
+
     &::after {
       transform: scaleX(1);
     }
@@ -86,8 +89,8 @@ table.table a {
 }
 
 // Exception for certain links where we don't want the underline effect
-.navbar a, 
-.social a, 
+.navbar a,
+.social a,
 .projects a,
 .pagination a,
 a.dropdown-item,
@@ -219,13 +222,13 @@ ul.task-list input[type="checkbox"] {
 .card {
   background-color: var(--global-card-bg-color);
   border-radius: var(--radius);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   transition: all 0.25s ease;
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
-  
+
   &:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
     transform: translateY(-1px);
     border-color: var(--secondary);
   }
@@ -247,13 +250,13 @@ ul.task-list input[type="checkbox"] {
   .card-body {
     padding: 1.5rem;
   }
-  
+
   .github-icon {
     i {
       color: var(--global-theme-color);
       opacity: 1;
       transition: all 0.2s ease;
-      
+
       &:hover {
         transform: scale(1.1);
         opacity: 1;
@@ -268,36 +271,36 @@ ul.task-list input[type="checkbox"] {
   .card {
     border: 1px solid var(--global-divider-color);
     border-radius: var(--radius);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
       border-color: hsla(var(--primary), 0.3);
-      
+
       .card-title {
         color: var(--global-theme-color);
       }
     }
-    
+
     .card-img-top {
       border-top-left-radius: var(--radius);
       border-top-right-radius: var(--radius);
       object-fit: cover;
       max-height: 200px;
     }
-    
+
     .card-body {
       flex: 1;
       display: flex;
       flex-direction: column;
       padding: 1.5rem;
-      
+
       .card-title {
         font-size: 1.25rem;
         font-weight: 600;
@@ -306,9 +309,9 @@ ul.task-list input[type="checkbox"] {
         transition: color 0.3s ease;
         position: relative;
         display: inline-block;
-        
+
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -5px;
           left: 0;
@@ -318,63 +321,63 @@ ul.task-list input[type="checkbox"] {
           transition: width 0.3s ease;
         }
       }
-      
+
       .card-text {
         color: var(--global-text-color-light);
         font-size: 0.95rem;
         flex-grow: 1;
       }
     }
-    
+
     .card-footer {
       background-color: transparent;
       border-top: 1px solid var(--global-divider-color);
       padding: 1rem 1.5rem;
-      
+
       .project-links {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        
+
         .project-link {
           display: flex;
           align-items: center;
           color: var(--global-text-color-light);
           transition: color 0.3s ease;
-          
+
           i {
             margin-right: 0.4rem;
             font-size: 1rem;
             opacity: 0.8;
             transition: opacity 0.3s ease;
           }
-          
+
           .link-text {
             font-size: 0.85rem;
             font-weight: 500;
           }
-          
+
           &:hover {
             color: var(--global-theme-color);
-            
+
             i {
               opacity: 1;
             }
           }
-          
+
           &:focus {
             outline: none;
           }
         }
-        
+
         .gh-icon {
           color: #24292e;
         }
-        
+
         .pdf-icon {
           color: #f40f02;
         }
-        
+
         .website-icon {
           color: var(--global-theme-color);
         }
@@ -408,8 +411,8 @@ ul.task-list input[type="checkbox"] {
       background-color: var(--global-card-bg-color);
       border-left: 3px solid var(--global-theme-color);
       font-size: 0.85rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
       i {
         color: var(--global-theme-color);
         margin-right: 6px;
@@ -470,7 +473,7 @@ ul.task-list input[type="checkbox"] {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   margin-top: 0;
-  
+
   &::after {
     display: none; /* Remove the blue gradient line */
   }
@@ -480,7 +483,7 @@ ul.task-list input[type="checkbox"] {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: var(--radius);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   padding: 0.5rem 0;
 
@@ -510,7 +513,7 @@ ul.task-list input[type="checkbox"] {
     background-color: transparent;
     padding-left: 1.8rem;
   }
-  
+
   &.active {
     color: var(--global-theme-color);
     background-color: transparent;
@@ -530,7 +533,7 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
     font-weight: 500;
     margin-right: 2rem;
-    
+
     .first-name {
       color: var(--global-theme-color);
     }
@@ -538,13 +541,13 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav {
     margin-left: 1rem;
-    
+
     .nav-item {
       margin: 0 0.5rem;
       position: relative;
-      
+
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         right: -0.5rem;
         top: 25%;
@@ -553,7 +556,7 @@ ul.task-list input[type="checkbox"] {
         background-color: var(--global-divider-color);
         display: block;
       }
-      
+
       &:last-child:after {
         display: none;
       }
@@ -567,7 +570,7 @@ ul.task-list input[type="checkbox"] {
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 0;
       height: 2px;
@@ -579,7 +582,7 @@ ul.task-list input[type="checkbox"] {
 
     &:hover {
       color: var(--global-theme-color);
-      
+
       &::after {
         width: 100%;
       }
@@ -589,9 +592,9 @@ ul.task-list input[type="checkbox"] {
   .navbar-nav .nav-item.active > .nav-link {
     font-weight: 600;
     color: var(--global-theme-color);
-    
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 2px;
@@ -602,7 +605,7 @@ ul.task-list input[type="checkbox"] {
 
     &:hover {
       color: var(--global-hover-color);
-      
+
       &::after {
         background-color: var(--global-hover-color);
       }
@@ -691,15 +694,15 @@ ul.task-list input[type="checkbox"] {
 
   .contact-icons {
     font-size: 2rem;
-    
+
     a {
       margin: 0 5px;
       transition: all 0.2s ease;
-      
+
       &:hover {
         transform: translateY(-3px);
       }
-      
+
       i::before {
         color: var(--global-theme-color);
         opacity: 0.8;
@@ -843,7 +846,7 @@ footer.sticky-bottom {
     font-size: 4.5rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -854,7 +857,7 @@ footer.sticky-bottom {
       background: linear-gradient(90deg, hsl(var(--primary)), transparent);
     }
   }
-  
+
   h2 {
     font-size: 1.5rem;
     color: var(--global-text-color-light);
@@ -886,9 +889,9 @@ footer.sticky-bottom {
   font-weight: 700;
   position: relative;
   margin-bottom: 1.5rem;
-  
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -978,9 +981,9 @@ footer.sticky-bottom {
       .card-title {
         color: var(--global-theme-color);
       }
-      
+
       .card {
-        box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
         transform: translateY(-1px);
         border-color: var(--global-theme-color);
       }
@@ -989,13 +992,13 @@ footer.sticky-bottom {
 
   .card {
     transition: all 0.25s ease;
-    
+
     .card-title {
       font-size: 1rem;
       transition: color 0.25s ease;
       position: relative;
       padding-bottom: 0.5rem;
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -1730,16 +1733,16 @@ body {
   font-weight: 500;
   text-decoration: none !important;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   i {
     margin-right: 0.5rem;
   }
-  
+
   &:hover {
     background-color: var(--global-hover-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1747,7 +1750,7 @@ body {
   color: var(--global-theme-color);
   opacity: 0.95;
   transition: all 0.2s ease;
-  
+
   &:hover {
     transform: scale(1.1);
     opacity: 1;
@@ -1760,11 +1763,11 @@ body {
   border: 1px solid var(--global-divider-color);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   height: 80vh; /* Use viewport height for better responsiveness */
   min-height: 600px;
-  
+
   iframe {
     position: absolute;
     top: 0;
@@ -1773,7 +1776,7 @@ body {
     height: 100%;
     display: block;
   }
-  
+
   @media (max-width: 768px) {
     height: 70vh; /* Smaller height on mobile */
     min-height: 400px;
@@ -1787,20 +1790,20 @@ body {
       color: var(--global-theme-color);
       font-weight: 600;
       position: relative;
-      
+
       &::after {
         display: none; // Disable underline for the first name
       }
     }
   }
-  
+
   .navbar-nav {
     .nav-item {
       position: relative;
       margin: 0 0.1rem;
-      
+
       &:not(:last-child)::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         right: -0.1rem;
@@ -1810,16 +1813,16 @@ body {
         background-color: var(--global-divider-color);
         opacity: 0.5;
       }
-      
+
       .nav-link {
         position: relative;
         padding: 0.5rem 0.8rem;
         font-weight: 500;
         color: var(--global-text-color);
         transition: color 0.3s ease;
-        
+
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0.2rem;
           left: 0.8rem;
@@ -1832,30 +1835,30 @@ body {
           transform-origin: right;
           display: block;
         }
-        
+
         &:hover {
           color: var(--global-theme-color);
-          
+
           &::after {
             transform: scaleX(1);
             transform-origin: left;
           }
         }
-        
+
         &.active {
           color: var(--global-theme-color);
           font-weight: 600;
-          
+
           &::after {
             transform: scaleX(1);
           }
         }
       }
-      
+
       &.active .nav-link {
         color: var(--global-theme-color);
         font-weight: 600;
-        
+
         &::after {
           transform: scaleX(1);
         }
@@ -1870,9 +1873,9 @@ body {
   font-weight: 700;
   position: relative;
   margin-bottom: 1.5rem;
-  
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -1888,7 +1891,7 @@ body {
     i {
       opacity: 0.95;
       transition: all 0.3s ease;
-      
+
       &:hover {
         opacity: 1;
         transform: translateY(-2px);

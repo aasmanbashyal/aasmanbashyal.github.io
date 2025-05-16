@@ -6,6 +6,7 @@ img: assets/img/slam/slam.png
 importance: 3
 category: College Projects
 ---
+
 <header>
     <h1>
         <a href="{{ '/assets/pdf/slam.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="float-right" style="color: grey; text-decoration: none;">
@@ -13,7 +14,6 @@ category: College Projects
         </a>
     </h1>
 </header>
-
 
 **Please refer to the entire thesis by clicking on the grey PDF button on the right.**
 

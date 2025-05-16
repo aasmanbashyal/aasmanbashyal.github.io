@@ -1,0 +1,14 @@
+/* Custom styles to override defaults */
+
+/* Back to top button with higher contrast */
+#back-to-top {
+  background-color: rgba(33, 100, 210, 0.9) !important; /* More saturated blue */
+  color: #ffffff !important; /* White text/icon */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important; /* Stronger shadow for better visibility */
+}
+
+/* For dark mode, we'll use a lighter blue to maintain contrast */
+html[data-theme="dark"] #back-to-top {
+  background-color: rgba(60, 130, 240, 0.9) !important; /* Lighter blue for dark mode */
+  color: #ffffff !important;
+}

@@ -6,9 +6,7 @@ set_name: Resume
 nav: true
 nav_order: 1
 cv_pdf: resume_aasman.pdf
-description: 
+description:
 toc:
-  sidebar: 
+  sidebar:
 ---
-
-

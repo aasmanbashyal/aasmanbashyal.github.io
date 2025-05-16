@@ -39,11 +39,11 @@ pagination:
         <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
       </li>
     {% endfor %}
+
   </ul>
 
-  {% if page.pagination.enabled %}
-    {% include pagination.liquid %}
-  {% endif %}
-  
+{% if page.pagination.enabled %}
+{% include pagination.liquid %}
+{% endif %}
 
 </div>

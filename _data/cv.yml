@@ -13,7 +13,7 @@
       institution: Pulchowk Campus, IOE, T.U.
       location: Kathmandu, Nepal
       year: 2017 – 2022
-      description: 
+      description:
         - Computer Science Courseworks
           - Computer Programming (C), Object Oriented Programming in C++, Discrete structure, Digital Logic, Computer Organization and Architecture, Computer Graphics, Embedded System, Computer Networks, Microprocessor, Project Mangement, Digital Signal Processing, Database Management Systems, Enterprise Computing
         - Mathematics Courseworks
@@ -22,7 +22,7 @@
   type: time_table
   contents:
     - title: Research Engineer
-      institution: Angelswing Inc. 
+      institution: Angelswing Inc.
       location: Seoul, Korea
       year: 2022 – Present
       description:

@@ -6,6 +6,7 @@ img: assets/img/amc/displaypicture.png
 importance: 1
 category: College Projects
 ---
+
 <header>
     <h1>
         <a href="{{ '/assets/pdf/automatic_modulation_classification.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="float-right" style="color: grey; text-decoration: none;">
@@ -14,11 +15,12 @@ category: College Projects
     </h1>
 </header>
 
-
 **Please refer to the entire thesis by clicking on the grey PDF button on the right.**
 
 ## Abstract
-***
+
+---
+
 <div style="text-align: justify;">
 Automatic Modulation Classification (AMC) is the classification of signals automatically based on the type of modulation used to generate that signal. Many different approaches
 for AMC have been proposed which are categorized as ‘Decision Theoretic Approach’, ‘Feature Based Approach’ and ‘Deep Learning Based Approach’. Here, we have implemented
@@ -43,7 +45,8 @@ average prediction time of 0.041 ms for a signal.
 <div style="border: 10px solid transparent;"></div>
 
 ## Methodology
-***
+
+---
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -56,9 +59,9 @@ average prediction time of 0.041 ms for a signal.
 
 We used multiple methodologies:
 
-
 ### CNN-LSTM based techinique
- CNN-LSTM model was found to be best.
+
+CNN-LSTM model was found to be best.
 
 ##### Key Features of the Model
 
@@ -119,7 +122,8 @@ This model represents a comprehensive approach to tackle the challenges in radio
 <div style="border: 10px solid transparent;"></div>
 
 ## Results
-***
+
+---
 
 <div style="text-align: justify;">
     The graph below shows the accuracy of all the deep learning based models for different SNR levels.
@@ -141,7 +145,8 @@ This model represents a comprehensive approach to tackle the challenges in radio
 <div style="border: 10px solid transparent;"></div>
 
 #### Confusion matrix
-***
+
+---
 
 <div style="text-align: justify;">
     Overall confusion matric for all methods
@@ -170,7 +175,8 @@ This model represents a comprehensive approach to tackle the challenges in radio
 <div style="border: 10px solid transparent;"></div>
 
 #### Accuracy
-***
+
+---
 
 <div style="text-align: justify;">
    Accuracy for different SNR level for all methods

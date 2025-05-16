@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Gaussian Splatting 
+title: Gaussian Splatting
 description: 3D reconstruction using Gaussian Splatting
 img: assets/img/gaussian.gif
 importance: 3
 category: Other Projects
 ---
-Gaussian splatting is a modern technique introduced recently in computer graphics and 3D rendering. It represents 3D data, such as point clouds, by "splatting" smooth, bell-shaped curves known as **Gaussians**.  This method helps to create soft and realistic renderings with less computational cost compared to traditional methods, like meshes.
+
+Gaussian splatting is a modern technique introduced recently in computer graphics and 3D rendering. It represents 3D data, such as point clouds, by "splatting" smooth, bell-shaped curves known as **Gaussians**. This method helps to create soft and realistic renderings with less computational cost compared to traditional methods, like meshes.
 
 The key advantage of Gaussian splatting is that it allows for smooth, continuous transitions between points in 3D space, which is especially useful for rendering high-density data or visualizing volumetric structures.
 
@@ -39,6 +40,7 @@ G(x) = \exp\left(-\frac{(x - \mu)^T \Sigma^{-1} (x - \mu)}{2}\right)
 $$
 
 Where:
+
 - $$ \mu $$ is the **mean** or center of the Gaussian (the location of the data point),
 - $$ \Sigma $$ is the **covariance matrix** that determines the shape of the Gaussian (how spread out or narrow it is),
 - $$ x $$ is the 3D point in space.
@@ -58,6 +60,7 @@ G_{\text{total}}(x) = \sum_{i=1}^{n} G_i(x)
 $$
 
 Where:
+
 - $$ G_i(x) $$ represents the Gaussian for the $$ i $$-th point,
 - $$ n $$ is the total number of points in the cloud.
 
@@ -67,11 +70,9 @@ This blending creates smooth transitions between neighboring points, resulting i
 
 After splatting the Gaussians, you can **render** the scene by tracing rays or using a volume rendering technique. The contribution of each splat to the final image depends on factors like the view direction, light, and camera position.
 
-
-### 7. Optimization 
+### 7. Optimization
 
 For very large datasets, optimizations can be applied to improve performance:
+
 - **Hierarchical splatting**: Use multiple levels of detail, where more detailed splats are used for close-up views and less detailed ones for faraway views.
 - **Adaptive Gaussian sizes**: Change the size of the splats depending on the scene’s complexity or the distance to the camera.
-
-

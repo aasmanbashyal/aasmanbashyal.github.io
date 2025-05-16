@@ -6,6 +6,7 @@ img: assets/img/sam.gif
 importance: 1
 category: Other Projects
 ---
+
 <div style="text-align: justify;">
 Implemented a Modified Segment Anything Model to facilitate real-time user interaction (50ms to 200ms latency) for
 segmenting large TIFF images, generating precise polygon masks, and improving the efficiency and accuracy of polygon

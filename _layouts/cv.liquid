@@ -29,13 +29,15 @@ layout: default
             <i class="fa-solid fa-file-pdf"></i> Download Resume (PDF)
           </a>
         </div>
-        
+
         <div class="pdf-viewer-container">
-          <iframe 
-            src="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0&view=FitH" 
+          <iframe
+            src="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
             frameborder="0"
-            seamless>
-            <p>It appears your browser doesn't support embedded PDFs. 
+            seamless
+          >
+            <p>
+              It appears your browser doesn't support embedded PDFs.
               <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}">Click here to download the PDF</a> instead.
             </p>
           </iframe>

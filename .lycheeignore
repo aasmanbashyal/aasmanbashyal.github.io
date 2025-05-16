@@ -1,0 +1,24 @@
+# Ignore template URLs used in liquid templates
+https://{{ site.mastodon_username }}
+https://youtube.com/@{{ site.youtube_id }}
+https://github.com/{{ site.github_username }}
+https://app.loops.so/api/newsletter-form/{{ site.newsletter.endpoint }}
+
+# Ignore social media profile links that are template-based
+https://twitter.com/{{ site.x_username }}
+https://www.linkedin.com/in/{{ site.linkedin_username }}
+https://instagram.com/{{ site.instagram_id }}
+https://www.pinterest.com/{{ site.pinterest_id }}
+
+# Ignore GitHub profile links that are dynamically generated
+https://github-readme-stats.vercel.app/api/
+https://github-profile-trophy.vercel.app/
+
+# Ignore analytics and external services that might be unreliable during testing
+https://www.googletagmanager.com/
+https://rum.cronitor.io/
+https://d1bxh8uas1mnw7.cloudfront.net/
+
+# Ignore docs links
+https://developer.mozilla.org/
+https://www.debugbear.com/ 

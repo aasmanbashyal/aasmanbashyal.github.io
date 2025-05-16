@@ -8,45 +8,45 @@
   /* Tailwind colors - light mode */
   --background: 0 0% 100%; /* Pure white for better contrast with elements */
   --foreground: 240 10% 3.9%; /* Dark text for readability */
-  
+
   --card: 0 0% 100%; /* Pure white for cards */
   --card-foreground: 240 10% 3.9%; /* Dark text for card content */
-  
+
   --popover: 0 0% 100%; /* White popover */
   --popover-foreground: 240 10% 3.9%; /* Dark text for popover content */
-  
+
   /* Primary color - Ocean Blue */
   --primary: 210 100% 45%; /* #0075E3 vibrant blue */
   --primary-foreground: 0 0% 98%; /* Light text on primary */
-  
+
   /* Secondary color - Light Cool Gray with blue tint */
-  --secondary: 210 60% 96%; /* Very light blue-tinted background */  
+  --secondary: 210 60% 96%; /* Very light blue-tinted background */
   --secondary-foreground: 210 100% 45%; /* Using primary color for text */
-  
+
   /* Muted color with blue tint for better harmony */
   --muted: 210 30% 92%;
   --muted-foreground: 210 30% 35%;
-  
+
   /* Accent color - slightly brighter blue than primary */
   --accent: 210 100% 55%;
   --accent-foreground: 0 0% 98%;
-  
+
   --destructive: 0 84.2% 60.2%; /* Default Red */
   --destructive-foreground: 0 0% 98%; /* Light text on red */
-  
+
   --border: 210 30% 80%; /* Subtle blue-tinted border */
   --input: 0 0% 100%; /* White input background */
   --ring: 210 100% 50%; /* Focus ring color */
-  
+
   --radius: 0.5rem;
-  
+
   /* Chart colors with improved contrast and harmony */
   --chart-1: 210 100% 45%; /* Primary blue */
   --chart-2: 173 75% 45%; /* Teal */
   --chart-3: 197 75% 45%; /* Blue-green */
   --chart-4: 280 70% 60%; /* Purple */
   --chart-5: 330 75% 55%; /* Magenta */
-  
+
   /* Original theme variables mapped to Tailwind colors */
   --global-bg-color: hsl(var(--background));
   --global-code-bg-color: hsl(var(--card));
@@ -118,43 +118,43 @@ html[data-theme="dark"] {
   /* Tailwind colors - dark mode */
   --background: 220 20% 12%; /* Dark blue-gray for better contrast */
   --foreground: 0 0% 98%; /* ~White for high contrast */
-  
+
   --card: 220 20% 15%; /* Slightly Lighter Dark blue-gray for cards */
   --card-foreground: 0 0% 98%; /* ~White text for card content */
-  
+
   --popover: 220 20% 16%; /* Popovers slightly lighter than cards */
   --popover-foreground: 0 0% 98%; /* ~White text for popover content */
-  
+
   /* Primary - vibrant blue for dark mode */
   --primary: 210 95% 65%;
   --primary-foreground: 220 20% 15%; /* Dark text on primary */
-  
+
   /* Secondary - Medium-Dark Gray for secondary elements */
   --secondary: 220 15% 22%;
   --secondary-foreground: 0 0% 90%; /* Lighter text for better contrast */
-  
+
   /* Muted - Lighter Dark Gray for muted elements */
   --muted: 220 15% 25%;
   --muted-foreground: 0 0% 75%; /* Brighter text for better readability */
-  
+
   /* Accent - bright blue for accents */
   --accent: 210 95% 70%;
   --accent-foreground: 220 20% 12%; /* Very dark text on accent */
-  
+
   --destructive: 0 70% 55%; /* Vibrant red for destructive actions */
   --destructive-foreground: 0 0% 98%; /* White text on destructive */
-  
+
   --border: 220 15% 25%; /* Border color visible against dark */
   --input: 220 20% 18%; /* Input background distinct from main bg */
   --ring: 210 95% 70%; /* Ring color related to primary */
-  
+
   /* Chart colors for dark mode with better contrast */
   --chart-1: 210 95% 65%; /* Primary blue */
   --chart-2: 160 70% 55%; /* Teal */
   --chart-3: 30 90% 65%; /* Orange */
   --chart-4: 280 70% 70%; /* Purple */
   --chart-5: 340 80% 65%; /* Pink */
-  
+
   /* Original theme variables mapped to Tailwind colors */
   --global-bg-color: hsl(var(--background));
   --global-code-bg-color: hsl(var(--card));

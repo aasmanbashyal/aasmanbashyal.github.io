@@ -32,9 +32,7 @@
             {{ content.title }}
             {% if content.institution %}
               <br>
-              <span class="institution">
-                <i class="fa-solid fa-building iconinstitution"></i> {{ content.institution }}
-              </span>
+              <span class="institution"> <i class="fa-solid fa-building iconinstitution"></i> {{ content.institution }} </span>
             {% endif %}
           </h6>
           {% if content.department or content.institution %}
@@ -42,8 +40,7 @@
               <tbody>
                 {% if content.institution %}
                   <tr>
-                    <td style="vertical-align: top; text-align: center" class="institution">
-                    </td>
+                    <td style="vertical-align: top; text-align: center" class="institution"></td>
                     <td class="institution">{{ content.institution }}</td>
                   </tr>
                 {% endif %}

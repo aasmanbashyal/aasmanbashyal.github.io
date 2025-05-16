@@ -9,6 +9,8 @@
           sizes = "250px"
           alt="project thumbnail"
           class="card-img-top"
+          width="250"
+          height="180"
         %}
       {% endif %}
       <div class="card-body">
@@ -30,14 +32,20 @@
             </span>
           {% endif %}
         {% endif %}
-        
+
         {% if project.pdf %}
-          <a href="{{ project.pdf | prepend: 'assets/pdf/' | relative_url }}" class="project-link" title="View PDF Document" target="_blank" rel="noopener noreferrer">
+          <a
+            href="{{ project.pdf | prepend: 'assets/pdf/' | relative_url }}"
+            class="project-link"
+            title="View PDF Document"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-solid fa-file-pdf pdf-icon"></i>
             <span class="link-text">PDF</span>
           </a>
         {% endif %}
-        
+
         {% if project.website %}
           <a href="{{ project.website }}" class="project-link" title="Visit Website" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-globe website-icon"></i>
