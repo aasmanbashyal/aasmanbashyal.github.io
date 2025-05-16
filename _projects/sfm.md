@@ -2,7 +2,7 @@
 layout: page
 title: Structure from Motion (SfM)
 description: A Comprehensive Mathematical and Computational Guide
-img: assets/img/sfm1.jpeg
+img: assets/img/sfm1.jpg
 importance: 2
 category: Other Projects
 ---

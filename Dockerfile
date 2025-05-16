@@ -25,6 +25,10 @@ RUN apt-get update -y && \
         build-essential \
         curl \
         imagemagick \
+        imagemagick-6-common \
+        imagemagick-6.q16 \
+        libmagickcore-6.q16-6 \
+        libmagickwand-6.q16-6 \
         inotify-tools \
         locales \
         nodejs \
