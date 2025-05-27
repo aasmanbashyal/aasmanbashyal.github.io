@@ -13,7 +13,7 @@ In node-level tasks, such as classifying research areas for papers in a citation
 
 Additionally, in semi-supervised situations where only a few nodes have labels, a Simple Graph Convolution (SGC)—a type of spectral GNN that acts as a low-pass filter [2]—takes a graph with some labeled nodes as input and generates label predictions for all nodes in the graph [2]. This highlights the effectiveness of spectral GNNs in node-level label propagation under limited supervision.
 
-<img src="/assets/blog/lf/semi-hidden-layer.png" alt="Semi-supervised classification with GCNs - hidden layer architecture" style="max-width:400px; height:auto; display:block; margin:auto;">
+<img src="/assets/img/blog/lf/semi-hidden-layer.png" alt="Semi-supervised classification with GCNs - hidden layer architecture" style="max-width:400px; height:auto; display:block; margin:auto;">
 *Figure from source: [3]*
 
 For graph-level tasks, such as predicting molecular properties [5] or classifying entire graphs based on their architecture, the primary objective is to derive a representation encapsulating the graph's global characteristics. By inherently emphasizing low-frequency components, which correspond to smooth variations across the graph [2] and reflect the graph's underlying global structure [6], spectral GNN captures global patterns.
